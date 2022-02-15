@@ -1,0 +1,148 @@
+{% extends "index.html" %}
+{% load static %}
+{% block title %}
+Home | Fraud Detection System
+{% endblock %}
+
+{% block content %}
+<main id="main">
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero">
+      <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+        <div class="carousel-inner" role="listbox">
+  
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url('https://sentropi.com/wp-content/uploads/2021/01/SEC0917-canada-slide6_900px.jpg')">
+            <div class="carousel-container">
+              <div class="container" >
+                <h2 class="animate__animated animate__fadeInDown">Welcome to <span> Fraud Detection System</span></h2>
+                <p class="animate__animated animate__fadeInUp">Complete Solution for fraud detection in online Transcation</p> <br> <div> <a class="getstarted scrollto" href="{% url 'login2' %}"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bank2" viewBox="0 0 16 16">
+                  <path d="M8.277.084a.5.5 0 0 0-.554 0l-7.5 5A.5.5 0 0 0 .5 6h1.875v7H1.5a.5.5 0 0 0 0 1h13a.5.5 0 1 0 0-1h-.875V6H15.5a.5.5 0 0 0 .277-.916l-7.5-5zM12.375 6v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zm-2.5 0v7h-1.25V6h1.25zM8 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2zM.5 15a.5.5 0 0 0 0 1h15a.5.5 0 1 0 0-1H.5z"/>
+                </svg> BANK</a>  <a class="getstarted scrollto" href="{% url 'userlogin' %}"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-bounding-box" viewBox="0 0 16 16">
+                  <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"/>
+                  <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                </svg> USER</a></div> </div>
+            </div>
+          </div>
+  
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url({% static 'assets/img/slide/slide-2.jpg' %})">
+            <div class="carousel-container">
+              <div class="container">
+                <h2>Bank and User Management</h2>
+                <p class="animate__animated animate__fadeInUp">Management of files</p>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url({% static 'assets/img/slide/slide-3.jpg' %})">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Latest Technology And Infrastructure Usage</h2>
+                <p class="animate__animated animate__fadeInUp">Latest Technology And Infrastructure</p>
+  
+              </div>
+            </div>
+          </div>
+  
+        </div>
+  
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+  
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+  
+      </div>
+    </section><!-- End Hero -->
+  
+    </main>
+  
+       <!-- ======= Team Section ======= -->
+       <section id="team" class="team section-bg">
+        <div class="container">
+  
+          <div class="section-title">
+            <h2>Team</h2>
+            <p>We are learning and growing together. Our team is cold as like ice and our work is  hot as like sun.</p>
+          </div>
+  
+          <div class="row">
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="member">
+                <img src="{% static 'assets/img/team/elon.jpg' %}" alt="">
+                <h4>Raj Parmar</h4>
+                <span>Chief Executive Officer</span>
+                <p>
+                  Having 20+ years of experience in  it and marketing industry and have been providing his experience  to us like sunshine.
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="member">
+                <img src="{% static 'assets/img/team/elon.jpg' %}" alt="">
+                <h4>Shweta Patel</h4>
+                <span>Product Manager</span>
+                <p>
+                  Anant has 15+ years of experience in building high-performance teams in the areas of cloud operations, customer support, customer success, and product management
+                </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+              <div class="member">
+                <img src="{% static 'assets/img/team/elon.jpg' %}" alt="">
+                <h4>Sidhdhrajsinh Rana </h4>
+                <span>CTO</span>
+                <p>
+                    Shivang has 18+ years of experience in building high-performance engineering teams in the areas of Enterprise Security and Telecommunications business.  </p>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Team Section -->
+{% endblock %}
+
+{% block style %}
+ .getstarted {
+  color: #5cb874;
+  padding: 8px 25px;
+  margin-left: 30px;
+  border-radius: 8px;
+  border: 2px solid #5cb874;
+  transition: 0.3s;
+  font-size: 24px;
+  background: white;
+}
+
+ .getstarted:hover {
+  background: #5cb874;
+  color: #fff;
+}
+{% endblock %}
